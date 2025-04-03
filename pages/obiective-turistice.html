@@ -19,97 +19,204 @@
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/obiective-turistice.css" />
 	</head>
+	<body>
+		<header>
+			<nav>
+				<div id="cookieConsent" class="cookie-consent">
+					<div class="cookie-content">
+						<p>
+							Acest site folosește cookie-uri pentru a îmbunătăți experiența ta
+							pe site. Prin continuarea navigării, accepți utilizarea
+							cookie-urilor.
+						</p>
+						<button id="acceptCookies" class="cookie-btn">Acceptă</button>
+					</div>
+				</div>
+				<div class="container">
+					<a href="../index.html" class="logo-link">
+						<img
+							src="../img/rose-flower-silhouette-logo-isolated-600nw-2310481953.webp"
+							alt="logo"
+						/>
+					</a>
+					<div class="menu-icon-container">
+						<span class="material-symbols-outlined menu-icon"> menu </span>
+						<input type="checkbox" />
+						<ul>
+							<li>
+								<a href="../pages/excursii.html">Excursii </a>
+							</li>
+							<li>
+								<a href="../pages/obiective-turistice.html">Obiective turistice</a>
+							</li>
+							<li>
+								<a href="../pages/contact.html"> Contact </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  z-index: 10;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
 <body>
-	<header>
-		<nav>
-			<div id="cookieConsent" class="cookie-consent">
-				<div class="cookie-content">
-					<p>
-						Acest site folosește cookie-uri pentru a îmbunătăți experiența ta
-						pe site. Prin continuarea navigării, accepți utilizarea
-						cookie-urilor.
-					</p>
-					<button id="acceptCookies" class="cookie-btn">Acceptă</button>
-				</div>
-			</div>
-			<div class="container">
-				<a href="../index.html" class="logo-link">
-					<img
-						src="../img/rose-flower-silhouette-logo-isolated-600nw-2310481953.webp"
-						alt="logo"
-					/>
-				</a>
-				<div class="menu-icon-container">
-					<span class="material-symbols-outlined menu-icon"> menu </span>
-					<input type="checkbox" />
-					<ul>
-						<li>
-							<a href="../pages/excursii.html"> Excursii </a>
-						</li>
-						<li>
-							<a href="../pages/obiective-turistice.html">Obiective turistice</a>
-						</li>
-						<li>
-							<a href="../pages/contact.html"> Contact </a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
-<h2 style="text-align:center"></h2>
+
+<h2 style="text-align:center">Cele mai frumoase obiective turistice din România</h2>
 
 <div class="row">
-	<div class="column">
-	  <a href="https://www.bran-castle.com/" target="_blank">
-		<img src="../img/bran.jpg" style="width:100%" class="hover-shadow cursor">
-	  </a>
-	  <p>Un castel medieval situat strategic între Transilvania și Muntenia, renumit pentru arhitectura sa gotică și legătura cu mitul lui Dracula.</p>
-	</div>
-	<div class="column">
-	  <a href="https://ro.wikipedia.org/wiki/Lacul_B%C3%A2lea" target="_blank">
-		<img src="../img/lac.jpg" style="width:100%" class="hover-shadow cursor">
-	  </a>
-	  <p>Un lac glaciar superb aflat la peste 2.000 de metri altitudine, accesibil prin celebrul drum Transfăgărășan.</p>
-	</div>
-	<div class="column">
-	  <a href="https://www.transfagarasan.info/" target="_blank">
-		<img src="../img/download.jpg" style="width:100%" class="hover-shadow cursor">
-	  </a>
-	  <p>Un drum alpin spectaculos care traversează Munții Făgăraș, oferind peisaje impresionante și serpentine amețitoare.</p>
-	</div>
-	<div class="column">
-	  <a href="https://www.libertatea.ro/lifestyle/cascada-bigar-povestea-obiective-turistice-3600166" target="_blank">
-		<img src="../img/dddd.jpg" style="width:100%" class="hover-shadow cursor">
-	  </a>
-	  <p>Una dintre cele mai unice cascade din lume, situată în Banat, celebră pentru forma sa și frumusețea naturală.</p>
-	</div>
+  <div class="column">
+    <img src="../img/castle-building-history-architecture-wallpaper-preview.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../img/5bd37a39dc12a-wallpaper-preview.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../img/istockphoto-1174761285-612x612.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../img/balea-lac.webp" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
 </div>
-
-<table>
-  <tr>
-    <th>Obiectiv Turistic</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td>Castelul Bran</td>
-    <td>Castelul Bran, situat la granița dintre Transilvania și Muntenia, este un simbol iconic al României. Adesea asociat cu legenda lui Dracula, acest castel medieval atrage anual sute de mii de turiști dornici să descopere istoria și misterele sale.</td>
-  </tr>
-  <tr>
-    <td>Lacul Bâlea</td>
-    <td>Lacul Bâlea, situat la o altitudine de 2.034 metri în Munții Făgăraș, este unul dintre cele mai impresionante lacuri glaciare din România. Accesibil pe timpul verii prin Transfăgărășan, acest loc oferă priveliști spectaculoase și posibilitatea de a vizita faimosul hotel de gheață construit în fiecare iarnă.</td>
-  </tr>
-  <tr>
-    <td>Transfăgărășan</td>
-    <td>Transfăgărășanul, construit între 1970 și 1974, este unul dintre cele mai spectaculoase drumuri din lume. Șoseaua traversează Munții Făgăraș și oferă panorame incredibile, fiind o destinație preferată de motocicliști, cicliști și turiști aventuroși.</td>
-  </tr>
-  <tr>
-    <td>Cascada Bigăr</td>
-    <td>Cascada Bigăr, situată în Parcul Național Cheile Nerei-Beușnița, era cunoscută pentru forma sa deosebită, fiind declarată una dintre cele mai frumoase cascade din lume. Deși prăbușită în 2021, rămâne un simbol al frumuseții naturii din România.</td>
-  </tr>
-</table>
-
-  
 
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -117,22 +224,22 @@
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="img_nature_wide.jpg" style="width:100%">
+      <img src="../img/castle-building-history-architecture-wallpaper-preview.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="img_snow_wide.jpg" style="width:100%">
+      <img src="../img/5bd37a39dc12a-wallpaper-preview.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="img_mountains_wide.jpg" style="width:100%">
+      <img src="../img/istockphoto-1174761285-612x612.jpg" style="width:100%">
     </div>
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="img_lights_wide.jpg" style="width:100%">
+      <img src="../img/balea-lac.webp" style="width:100%">
     </div>
     
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -144,17 +251,80 @@
 
 
     <div class="column">
-      <img class="demo cursor" src="../img/download.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      <img class="demo cursor" src="../img/castle-building-history-architecture-wallpaper-preview.jpg" style="width:100%" onclick="currentSlide(1)" alt="Castelul Bran">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+      <img class="demo cursor" src="../img/5bd37a39dc12a-wallpaper-preview.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cascada Bigar">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="../img/istockphoto-1174761285-612x612.jpg" style="width:100%" onclick="currentSlide(3)" alt="Transfagarasan">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="../img/balea-lac.webp" style="width:100%" onclick="currentSlide(4)" alt="Lacul Bâlea">
     </div>
   </div>
 </div>
+<table>
+	<tr>
+	  <th>Obiectiv Turistic</th>
+	  <th></th>
+	</tr>
+	<tr>
+	  <td>Castelul Bran</td>
+	  <td>Castelul Bran, situat la granița dintre Transilvania și Muntenia, este un simbol iconic al României. Adesea asociat cu legenda lui Dracula, acest castel medieval atrage anual sute de mii de turiști dornici să descopere istoria și misterele sale.</td>
+	</tr>
+	<tr>
+	  <td>Lacul Bâlea</td>
+	  <td>Lacul Bâlea, situat la o altitudine de 2.034 metri în Munții Făgăraș, este unul dintre cele mai impresionante lacuri glaciare din România. Accesibil pe timpul verii prin Transfăgărășan, acest loc oferă priveliști spectaculoase și posibilitatea de a vizita faimosul hotel de gheață construit în fiecare iarnă.</td>
+	</tr>
+	<tr>
+	  <td>Transfăgărășan</td>
+	  <td>Transfăgărășanul, construit între 1970 și 1974, este unul dintre cele mai spectaculoase drumuri din lume. Șoseaua traversează Munții Făgăraș și oferă panorame incredibile, fiind o destinație preferată de motocicliști, cicliști și turiști aventuroși.</td>
+	</tr>
+	<tr>
+	  <td>Cascada Bigăr</td>
+	  <td>Cascada Bigăr, situată în Parcul Național Cheile Nerei-Beușnița, era cunoscută pentru forma sa deosebită, fiind declarată una dintre cele mai frumoase cascade din lume. Deși prăbușită în 2021, rămâne un simbol al frumuseții naturii din România.</td>
+	</tr>
+  </table>
+  
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
