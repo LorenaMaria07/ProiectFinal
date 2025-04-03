@@ -1,0 +1,55 @@
+.welcome {
+	background-color: var(--bg-primary);
+	height: 30vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome h1 {
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.welcome h1 {
+		font-size: 32px;
+	}
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: var(--bg-site);
+	background-image: url("../img/WhatsApp%20Image%202025-03-31%20at%2020.47.28_71e5d80c.jpg");
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.excursie {
+	background: white;
+	padding: 15px;
+	margin: 10px auto;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.excursie:hover {
+	transform: scale(1.05);
+}
+
+.excursie h2 {
+	margin: 0;
+	color: var(--text-primary);
+}
+
+.excursie p {
+	margin: 5px 0;
+	font-size: 16px;
+	color: var(--text-primary);
+}
